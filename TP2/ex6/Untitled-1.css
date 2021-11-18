@@ -1,0 +1,55 @@
+h1 
+{
+    color: white;
+    background-color: darkslategray;
+    padding-left: 29mm;
+    padding-bottom: 25mm;
+    padding-top: 7mm;
+}
+body > :last-child > :nth-child(5) 
+{
+    color: white;
+    background-color: darkslategray;
+    padding-left: 2%;
+    padding-right: 2%;
+    clear: both;
+}
+body > :nth-child(3) 
+{
+    float: left;
+    width: 14%;
+    padding-left: 1%;
+    padding-right: 1%;
+    max-height: 55em;
+    overflow: hidden;   
+}
+body > :nth-child(4) 
+{
+    float: right;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: block;
+}
+section 
+{
+    text-align: justify;
+}
+body > :nth-child(4) > p 
+{
+    border-top: 3pt dotted black;
+}
+section:nth-of-type(2) p:last-of-type::after {
+    background: linear-gradient(to bottom, transparent, white 80%);
+    content: "Read more with your premium account";
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 23cm;
+    text-align: center;
+    vertical-align: bottom;
+    font-family: fantasy;
+    display: inline-block;
+    width: 160px;
+    height: 2cm;
+    margin-top: -25cm;
+}
