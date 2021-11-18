@@ -1,0 +1,106 @@
+h2 {
+    color: lightgrey;
+}
+
+h3 {
+    color: rgb(4, 184, 184);
+    text-decoration: underline;
+}
+
+section {
+    border: black solid 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: Arial, sans-serif;
+    color: teal;
+}
+
+section {
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    float: left;
+    max-width: 14%;
+}
+
+section:first-of-type > dl {
+    margin-left: 50%;
+}
+
+section:first-of-type > dl > dt {
+    font-weight: bold;
+    display: inline-block;
+    width: 49%;
+}
+
+section:first-of-type > dl > dd {
+    display: inline-block;
+    width: 49%;
+    -webkit-margin-start: 0;
+}
+
+section:first-of-type > h3 {
+    text-align: center;
+    font-size: 3em;
+    color: teal;
+    text-decoration: unset;
+    font-family: Arial, sans-serif;
+}
+
+table > thead > tr {
+    background: darkgray;
+    color: lightgray;
+}
+
+table > tbody > tr > td:first-child {
+    background: darkgray;
+    color: lightgray;
+    width: 75px;
+}
+
+table > tbody > tr:nth-child(2n) {
+    background-color: lightgray;
+    color: rgb(4, 184, 184);
+}
+
+table > tbody > tr > td:nth-child(2) {
+    white-space: nowrap;
+}
+
+nav {
+    max-width: 800px;
+    margin: auto;
+}
+
+nav > ul > li {
+    display: inline;
+    list-style: none;
+}
+
+nav > ul {
+    padding: 0px 20px;
+    margin: 0;
+}
+
+nav {
+    background-color: teal;
+    color: white;
+}
+
+nav a {
+    text-decoration: unset;
+    color: white;
+    font-size: 1.35em;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
+nav > ul > li:not(:first-child)::before {
+    content: "\2666 ";
+    margin: 0px 10px;
+}
