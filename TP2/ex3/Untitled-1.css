@@ -1,0 +1,18 @@
+p:first-of-type::first-letter {
+    color: rgb(241, 124, 144); 
+    font-size: 180% ;
+    float: left;
+}
+p {
+    text-align: justify;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;     
+}
+h2::before {
+    content:"\276c";
+    margin-right: 1%;
+}
+h1 {
+    font-variant-caps: petite-caps;
+}
