@@ -1,0 +1,24 @@
+p {
+    color: rgba(255, 255, 255);
+    text-align: justify;
+}
+body {
+    background-color: dimgray;
+    text-align: justify;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+section {
+    background-color: rgba(255, 255, 255, 0.4);
+    columns: 3;
+    column-width: 48%;
+    border-radius: 7mm;
+    margin-bottom: 2cm;
+    margin-top: 2mm;
+    column-gap: 1.5cm;
+    column-rule: 1pt ridge darkgray;
+    padding: 2mm;
+}
+h2 {
+    column-span: all;
+}
