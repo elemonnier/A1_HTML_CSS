@@ -1,0 +1,18 @@
+.etalon {
+    width: 3cm;
+    height: 5cm;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.content {
+    height: 300px;
+    width: 100%;
+}
+.content:nth-of-type(2n+0) {
+    background-color: darkorange;
+}
+.content:nth-of-type(2n+1) {
+    background-color: orange;
+}
