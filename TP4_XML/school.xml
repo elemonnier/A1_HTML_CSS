@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE school SYSTEM "school.dtd">
+<school>
+        <institution>
+                <name>ISEN Ouest</name>
+                <group>Yncréa Ouest</group>
+                <sites/><!-- On remplira plus tard -->
+                <admission-types/><!-- On remplira plus tard -->
+                <degrees/><!-- On remplira plus tard -->
+        </institution>
+        <school-site id="Brest">
+                <name>Brest</name>
+        </school-site>
+        <school-site id="Rennes">
+                <name>Rennes</name>
+        </school-site>
+        <school-site id="Nantes">
+                <name>Nantes</name>
+        </school-site>
+        <admission-type id="puissance-alpha">
+                <name>Concours Puissance Alpha</name>
+                <via>Parcours Sup</via>
+                <description>...</description>
+                <types>
+                        <type>initial</type>
+                </types>
+        </admission-type>
+        <admission-type id="fesic-prepa">
+                <name>Concours FESIC Prépa</name>
+                <description>...</description>
+                <types>
+                        <type>initial</type>
+                </types>
+        <admission-type id="interview">
+                <name>Etude de dossier &amp; Entretien</name>
+                <description>...</description>
+                <types>
+                        <type>initial</type>
+                        <type>alternance</type>
+                </types>
+        </admission-type>
+        <degree type="master" domain="engineering">
+                <name>Ingénieur ISEN Yncréa Ouest</name>
+                <admissions>
+                        <admission from="bac" type="initiale">
+                                <method type="puissance-alpha"/>
+                                <name>Cycle Informatique &amp; Réseaux</name>
+                                <shortname>CIR</shortname>
+                                <availability>
+                                        <site>Brest</site>
+                                        <site>Rennes</site>
+                                        <site>Nantes</site>
+                                </availability>
+                        </admission>
+                        <admission from="bac" type="initiale">
+                                <method type="puissance-alpha"/>
+                                <name>Cycle Généraliste des Sciences de l'Ingénieur</name>
+                                <shortname>CGSI</shortname>
+                                <availability>
+                                        <site>Brest</site>
+                                        <site>Nantes</site>
+                                </availability>
+                        </admission>
+                        <admission from="bac" type="initiale">
+                                <method type="puissance-alpha"/>
+                                <name>Cycle Biologie &amp; Sciences et Techniques</name>
+                                <shortname>BIOST</shortname>
+                                <availability>
+                                        <site>Brest</site>
+                                </availability>
+                        </admission>
+                        <admission from="bac" type="initiale">
+                                <method type="puissance-alpha"/>
+                                <name>Cycle Economie, Numérique et Technologies</name>
+                                <shortname>CENT</shortname>
+                                <availability>
+                                        <site>Brest</site>
+                                </availability>
+                        </admission>
+                        <admission from="bac+2" type="initiale">
+                                <method type="fesic-prepa"/>
+                                <name>Cycle Généraliste des Sciences de l'Ingénieur</name>
+                                <shortname>CGSI</shortname>
+                                <availability>
+                                        <site>Brest</site>
+                                </availability>
+                        </admission>
+                        <admission from="bac+2" type="alternance">
+                                <method type="interview"/>
+                                <name>Cycle Ingénieur Par Apprentissage</name>
+                                <shortname>CIPA</shortname>
+                                <availability>
+                                        <site>Brest</site>
+                                </availability>
+                        </admission>
+                </admissions>
+        </degree>
+</school>
