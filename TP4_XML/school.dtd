@@ -1,0 +1,27 @@
+<!ELEMENT school (institution, school-site, admission-type, degree)>
+
+        <!ELEMENT institution (name, group, sites, admission-types, degrees)>
+        <!ELEMENT school-site (name)>
+                <!ATTLIST school-site id ID #REQUIRED>
+        <!ELEMENT admission-type (name, via, description, types)>
+                <!ATTLIST admission-type id ID #REQUIRED>
+        <!ELEMENT admission-types (#PCDATA)>
+        <!ELEMENT sites (school-site)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT group (#PCDATA)>
+        <!ELEMENT via (#PCDATA)>
+        <!ELEMENT degrees (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT types (type)>
+        <!ELEMENT type (#PCDATA)>
+        <!ELEMENT degree (name, admissions)>
+                <!ATTLIST degree type CDATA #REQUIRED>
+                <!ATTLIST degree domain CDATA #REQUIRED>
+        <!ELEMENT admissions (admission)>
+        <!ELEMENT admission (method, name, shortname, availability)>
+        <!ELEMENT availability (site)>
+        <!ELEMENT shortname (#PCDATA)>
+        <!ELEMENT site (#PCDATA)>
+                <!ATTLIST admission from CDATA #REQUIRED>
+                <!ATTLIST admission type CDATA #REQUIRED>
+                <!ATTLIST method type CDATA #REQUIRED>
