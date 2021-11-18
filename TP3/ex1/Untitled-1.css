@@ -1,0 +1,24 @@
+.grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+    grid-column-gap: 6px;
+    width: 812px;
+    grid-row-gap: 6px;
+}
+body {
+    background-color: darkgray;
+    text-align: center;
+}
+div > :last-child {
+    align-self: stretch;
+}
+div > :first-child {
+    grid-column: 1 / span 3;
+    width: 100%;
+}
+div > :nth-child(5) {
+    align-self: stretch;
+    grid-column: auto;
+    grid-row: auto;
+}
